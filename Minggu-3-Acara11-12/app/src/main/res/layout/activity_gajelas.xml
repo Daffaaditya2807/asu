@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Gajelas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+<!--    HEADERR-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/blue_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--    Judul Aplikasi-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ROMU2A MENU"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cari : "
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"
+                />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/vieww"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:inputType="text"
+                    android:background="@drawable/edtrnded"
+                    android:hint="Select A Country"
+                    android:layout_marginHorizontal="30dp"
+                    android:completionThreshold="1"
+                    android:completionHint="Select A Country"
+                    />
+        </LinearLayout>
+    </FrameLayout>
+<!--        AKHIR HEADERR-->
+
+<!--        JUDUL MENU UTAMA-->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:text="MENU UTAMA"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    />
+<!--BATAS JUDUL MENU UTAMA-->
+
+<!--Mulai FRAME 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/layout1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <FrameLayout
+            android:id="@+id/frm1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded">
+
+            <ImageView
+                android:id="@+id/imgfrm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/spbu" />
+
+        </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="Listview Apps"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/colorPrimary"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/wisata" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="Spinner Apps"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/colorPrimaryDark"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/shopping" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="BELANJA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+<!--    SELESAI FRAME 1-->
+
+<!--    MULAI LAYOUT 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/layout2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/pinkAmatMuda"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/culiner" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="KULINER"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm5"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/pinkMuda"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/art" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="SENI"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm6"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/biruMuda"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hotel" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="HOTEL"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    SELESAI LAYOUT 2-->
+
+    <!--    MULAI LAYOUT 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/layout3">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm7"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/amatbiruMuda"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/kereta" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="JADWAL KERETA"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm8"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/teal_200"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/transport" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="JADWAL BUS"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:id="@+id/frm9"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/purple_200"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfrm9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/home" />
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="3dp"
+                android:text="HOME"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    SELESAI LAYOUT 3-->
+
+<!--        Mulai Frame Promo-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="INPO PROMO"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/frmrounded"
+                    android:backgroundTint="@color/pinkMuda"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        >
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/miemastrip"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="PROMO MASTRIP 90%"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            android:padding="15dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/frmrounded"
+                    android:backgroundTint="@color/amatbiruMuda"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/setiyo"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:padding="15dp"
+                            android:text="PROMO SETIYO BELI 1 GRATIS 2"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/frmrounded"
+                    android:backgroundTint="@color/pinkAmatMuda"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="PROMO PRIMA BELI 1 BAYAR 1"
+                            android:textColor="@color/black"
+                            android:textSize="25dp"
+                            android:padding="15dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+<!--        Selesai Frame Promo-->
+
+<!--     MULAI BUTTON AKHIR   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        <Button
+            android:id="@+id/keluar"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:text="KELUAR"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/kemana"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:backgroundTint="@null"
+            android:background="@color/colorPrimaryDark"
+            android:text="KEMANA"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+        <!--     SELESAI BUTTON AKHIR   -->
+    </LinearLayout>
+
+</ScrollView>
